@@ -1,0 +1,44 @@
+@media (max-width: 599px) {
+    header {
+        display: none;
+    }
+
+    .car-box {
+        ul {
+            bottom: -78px !important;
+            left: -22px !important;
+            transform: translateX(0) !important;
+
+            li {
+                // width: 100px !important;
+                // height: 78px !important;
+            }
+
+            .show-lightbox {
+                border-style: dotted;
+                border-color: #000 !important;
+                box-shadow: 1px 2px 3px #000;
+            }
+        }
+    }
+
+    .type-box {
+        h2 {
+            color: royalblue;
+        }
+
+        ul {
+            width: 100% !important;
+            height: 120px !important;
+
+            li {
+                width: 33% !important;
+            }
+        }
+
+        article {
+            color: #fff !important;
+        }
+    }
+}
+

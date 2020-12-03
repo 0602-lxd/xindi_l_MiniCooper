@@ -1,0 +1,82 @@
+section {
+    video {
+        width: 100%;
+        height: 500px;
+    }
+
+    .car-box {
+        position: relative;
+
+        ul {
+            clear: both;
+            width: 41%;
+            height: 19%;
+            position: absolute;
+            bottom: -50px;
+            left: 53%;
+            transform: translateX(-50%);
+
+            li {
+                width: 23%;
+                height: 100%;
+                float: left;
+                list-style: none;
+                margin-right: 1%;
+                border: 1px dashed #ccc;
+                cursor: pointer;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .show-lightbox {
+                transform: scale(1.1);
+                border-color: orange;
+            }
+        }
+    }
+
+    .type-box {
+        color: #fff;
+        margin: 0;
+        padding-top: 50px;
+        box-sizing: border-box;
+        height: 250px;
+        position: relative;
+
+        .type-box-item {
+            width: 90%;
+            margin: 0 auto;
+
+            img {
+                display: inline-block;
+                width: 10%;
+                height: 5%;
+            }
+
+            article {
+                position: absolute;
+                right: 5%;
+                top: 126px;
+                color: rgb(0, 0, 0);
+                width: 73%;
+                overflow: hidden;
+            }
+        }
+
+        .light {
+            transform: scale(1.05);
+
+        }
+
+        h2 {
+            margin-left: 20px;
+        }
+
+        .light-class {
+            opacity: .5;
+        }
+    }
+}
