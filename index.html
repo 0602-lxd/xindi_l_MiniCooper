@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with Vue</title>
+
+    <link rel="stylesheet" href=css/main.css> 
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js">
+    </script>
+</head>
+
+<body>
+    <main id="app">
+        <header>
+            <div><img src="images/logo.png" alt="mini"></div>
+            <ol>
+                <li>MODELS</li>
+                <li>TOOLS</li>
+                <li>DISCOVER</li>
+                <li>OWNERS</li>
+            </ol>
+        </header>
+        <section>
+            <div class="car-box">
+                <video src="video/top-header-en.mp4" controls="controls" autoplay="autoplay"></video>
+                <ul>
+                    <!-- <li
+                        v-for="(item, index) in list"
+                        :key="index"
+                        @click.prevent="changeVideo(index)"><img :src="item.img" :alt="item.alt"></li> -->
+                    <cooper-car @change="changeVideo" v-for="(item, index) in list" :item="item" :index="index ":key="index"></cooper-car>
+                </ul>
+
+            </div>
+            <div class="type-box">
+                <h2>SELECT YOUR MODEL: {{ car.type }}</h2>
+                <type-car v-for="(carItem, ind) in carList" :key="ind" @change="clickImg" :caritem="carItem" :ind="ind" :show="show"></type-car>
+            </div>
+        </section>
+        <footer>download more info</footer>
+    </main>
+</body>
+
+<script src="js/main.js" type="module"></script>
+</html>
+
+</html>
+</html>
